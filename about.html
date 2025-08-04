@@ -7,29 +7,43 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Top navigation bar -->
-  <nav class="top-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Top Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="index.html">Camryn Carter</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="resume.html">Resume</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <div class="container">
-    <!-- Left sidebar -->
-    <aside class="left-sidebar">
-      <img src="images/yourphoto.jpg" alt="Your Name" class="profile-photo" />
-      <nav class="sidebar-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </aside>
+<!-- Left Side Ribbon Sidebar -->
+<aside class="sidebar d-flex flex-column align-items-center text-center">
+  <div class="sidebar-photo my-4">
+    <img src="https://i.pravatar.cc/150?img=12" alt="Camryn Carter" class="rounded-circle img-fluid" />
+  </div>
+  <nav class="nav flex-column sidebar-nav">
+    <a class="nav-link" href="about.html">About Me</a>
+    <a class="nav-link" href="resume.html">Resume</a>
+    <a class="nav-link" href="contact.html">Contact</a>
+  </nav>
+</aside>
 
     <!-- Main content -->
     <main class="main-content">

@@ -12,6 +12,31 @@ body {
   background: #fff;
   color: #333;
 }
+/*literally just added in */
+body {
+  display: flex;
+  min-height: 100vh;
+}
+/*literally just added in */
+/* Sidebar stays fixed on the left */
+.sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  position: fixed;
+  top: 60px; /* height of the top navbar */
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+}
+/*literally just added in */
+/* Main content shifts to the right of sidebar */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  padding-top: 80px; /* give room for top navbar */
+  width: calc(100% - 250px);
+}
 
 .navbar {
   background-color: lightblue !important;
