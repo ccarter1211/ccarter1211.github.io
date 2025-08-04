@@ -13,6 +13,17 @@ body {
   color: #333;
 }
 
+.navbar {
+  background-color: lightblue !important;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.nav-link:hover {
+  color: hotpink !important;
+}
 
 .top-nav ul {
   list-style: none;
