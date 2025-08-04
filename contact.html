@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Website - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top navigation bar -->
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <!-- Left sidebar -->
+    <aside class="left-sidebar">
+      <img src="images/yourphoto.jpg" alt="Your Name" class="profile-photo" />
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <section id="contact-info">
+        <h1>Contact Me</h1>
+        <p>If you’d like to get in touch, feel free to reach out via any of the following:</p>
+        <ul>
+          <li><strong>Email:</strong> your.email@example.com</li>
+          <li><strong>Phone:</strong> (123) 456-7890</li>
+          <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a></li>
+          <li><strong>Twitter:</strong> <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener">@yourhandle</a></li>
+        </ul>
+      </section>
+
+      <section id="contact-form">
+        <h2>Send a Message</h2>
+        <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
