@@ -3,88 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Camryn Carter - Personal Portfolio</title>
-  <!-- Bootstrap 5 CSS -->
+  <title>Camryn Carter - Home</title>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-pink fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Camryn Carter</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+  <!-- Sidebar -->
+  <aside class="sidebar d-flex flex-column align-items-center text-center">
+    <div class="sidebar-photo my-4">
+      <!-- Replace src with your actual photo -->
+      <img src="https://i.pravatar.cc/150?img=12" alt="Camryn Carter" class="rounded-circle img-fluid" />
+    </div>
+    <nav class="nav flex-column sidebar-nav">
+      <a class="nav-link active" href="#about">About Me</a>
+      <a class="nav-link" href="#resume">Resume</a>
+      <a class="nav-link" href="#interests">Interests</a>
+    </nav>
+  </aside>
+
+  <!-- Main content shifted right -->
+  <main class="main-content">
+    <section id="about" class="section section-about d-flex align-items-center justify-content-center">
+      <div class="container text-center text-white">
+        <h1 class="mb-3">Hi, I'm Camryn Carter</h1>
+        <p class="lead">
+          A detail-oriented project manager and systems engineer passionate about driving innovative solutions and operational excellence.
+        </p>
+      </div>
+    </section>
+
+    <section id="resume" class="section section-resume">
+      <div class="container">
+        <h2 class="mb-4 text-pink">Resume</h2>
+        <p><strong>Experience</strong></p>
+        <ul>
+          <li>Project Management Senior Analyst at Goldman Sachs</li>
+          <li>Strategy Consulting and Systems Engineering Background</li>
+          <li>Cross-functional leadership and process improvements</li>
+        </ul>
+        <p><strong>Education</strong></p>
+        <ul>
+          <li>B.S. in Systems Engineering, University of Pennsylvania</li>
         </ul>
       </div>
-    </div>
-  </nav>
-<!-- Left sidebar -->
-    <aside class="left-sidebar">
-      <img src="images/yourphoto.jpg" alt="Your Name" class="profile-photo" />
-      <nav class="sidebar-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
-    </aside>
-  <!-- About Me Section -->
-  <section id="about" class="section section-about d-flex align-items-center">
-    <div class="container text-center text-white">
-      <h1 class="mb-3">Hi, I'm Camryn Carter</h1>
-      <p class="lead">
-        A detail-oriented project manager and systems engineer passionate about driving innovative solutions and operational excellence.
-      </p>
-    </div>
-  </section>
+    </section>
 
-  <!-- Resume Section -->
-  <section id="resume" class="section section-resume">
-    <div class="container">
-      <h2 class="mb-4 text-pink">Resume</h2>
-      <p><strong>Experience</strong></p>
-      <ul>
-        <li>Project Management Senior Analyst at Goldman Sachs</li>
-        <li>Strategy Consulting and Systems Engineering Background</li>
-        <li>Cross-functional leadership and process improvements</li>
-      </ul>
-      <p><strong>Education</strong></p>
-      <ul>
-        <li>B.S. in Systems Engineering, University of Pennsylvania</li>
-      </ul>
-    </div>
-  </section>
+    <section id="interests" class="section section-interests bg-pink text-white">
+      <div class="container">
+        <h2 class="mb-4">Interests</h2>
+        <p>
+          Exploring new technologies, learning about the advertising ecosystem, yoga, traveling, and creative problem solving.
+        </p>
+      </div>
+    </section>
+  </main>
 
-  <!-- Interests Section -->
-  <section id="interests" class="section section-interests bg-pink text-white">
-    <div class="container">
-      <h2 class="mb-4">Interests</h2>
-      <p>
-        Exploring new technologies, learning about the advertising ecosystem, yoga, traveling, and creative problem solving.
-      </p>
-    </div>
-  </section>
-
-  <!-- Bootstrap JS Bundle (Popper + Bootstrap JS) -->
+  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
