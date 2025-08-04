@@ -12,16 +12,7 @@ body {
   background: #fff;
   color: #333;
 }
-/* Top navigation */
-.top-nav {
-  background-color: #4a90e2; /* medium blue */
-  padding: 10px 20px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+
 
 .top-nav ul {
   list-style: none;
