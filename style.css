@@ -137,3 +137,16 @@ h2 {
   flex-shrink: 0;
   background-color: #f8f9fa;
 }
+.resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff69b4; /* pink theme */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.resume-button:hover {
+  background-color: #ff85c1;
+}
