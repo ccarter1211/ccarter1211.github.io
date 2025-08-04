@@ -12,6 +12,38 @@ body {
   background: #fff;
   color: #333;
 }
+/* Top navigation */
+.top-nav {
+  background-color: #4a90e2; /* medium blue */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.top-nav a:hover,
+.top-nav a.active {
+  background-color: #2f6fc1; /* darker blue */
+}
+
 
 /* Sidebar styles */
 .sidebar {
