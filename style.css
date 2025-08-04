@@ -23,29 +23,10 @@ body {
 }
 
 .nav-link:hover {
-  color: hotpink !important;
+  color: var(--pink-dark) !important;
 }
 
-.top-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;
-}
 
-.top-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.top-nav a:hover,
-.top-nav a.active {
-  background-color: #2f6fc1; /* darker blue */
-}
 
 
 /* Sidebar styles */
@@ -150,4 +131,9 @@ h2 {
 .section-reading {
   background-color: var(--pink-dark);
   color: white;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color: #f8f9fa;
 }
