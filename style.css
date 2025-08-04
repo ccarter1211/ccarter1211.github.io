@@ -1,148 +1,60 @@
-/* Reset some defaults */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Pink theme colors */
+:root {
+  --pink-color: #e83e8c;
+  --pink-dark: #b32969;
+  --pink-light: #f7bbd1;
 }
 
+/* Navbar */
+.bg-pink {
+  background-color: var(--pink-color) !important;
+}
+
+/* Body & sections */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #e6f0fa; /* light blue */
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 56px; /* navbar height */
+  background: #fff;
   color: #333;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* About section with background */
+.section-about {
+  background: var(--pink-color);
   min-height: 100vh;
-}
-
-/* Top navigation bar */
-.top-nav {
-  background-color: #e91e63; /* pink ribbon color */
-  padding: 15px 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-/* Remove horizontal padding from container to make full width */
-.top-nav ul {
-  list-style: none;
   display: flex;
-  justify-content: center; /* center nav items horizontally */
-  gap: 40px;
-  margin: 0;
-  padding: 0;
-}
-
-.top-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold; /* bold nav text */
-  font-size: 1.1rem;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.top-nav a:hover,
-.top-nav a.active {
-  background-color: #ad1457; /* darker pink for hover/active */
-  color: white;
-}
-
-/* Layout container */
-.container {
-  display: flex;
-  padding-top: 60px; /* account for fixed nav height */
-  max-width: 1000px;
-  margin: 0 auto 40px;
-}
-
-/* Left sidebar */
-.left-sidebar {
-  width: 200px;
-  background-color: #cfe3fc; /* lighter blue */
-  padding: 20px;
-  border-radius: 8px;
-  margin-right: 20px;
-  height: fit-content;
-}
-
-.profile-photo {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 20px;
-  border: 3px solid #4a90e2;
-}
-
-/* Sidebar nav */
-.sidebar-nav ul {
-  list-style: none;
-  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  gap: 15px;
-  text-align: center;
 }
 
-.sidebar-nav a {
-  color: #2f6fc1;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 6px 0;
-  border-radius: 4px;
-  display: block;
-  transition: background-color 0.3s;
+/* Headings and text */
+h1, h2 {
+  font-weight: 700;
 }
 
-.sidebar-nav a:hover,
-.sidebar-nav a.active {
-  background-color: #2f6fc1;
-  color: white;
+h2 {
+  color: var(--pink-dark);
 }
 
-/* Main content */
-.main-content {
-  flex: 1;
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+/* Resume section */
+.section-resume ul {
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
-/* Section styling */
-.main-content section {
-  border-bottom: 2px solid #4a90e2;
-  padding-bottom: 20px;
+/* Interests section */
+.section-interests {
+  background-color: var(--pink-dark);
 }
 
-.main-content section:last-child {
-  border-bottom: none;
-}
-
-.main-content h1 {
-  margin-bottom: 15px;
-  color: #2f6fc1;
-}
-
-.main-content h2 {
-  margin-bottom: 10px;
-  color: #4a90e2;
-}
-
-.main-content p, .main-content ul {
-  line-height: 1.6;
-  font-size: 1.1em;
-}
-
-.main-content ul {
-  padding-left: 20px;
-}
-
-.main-content ul li {
-  margin-bottom: 8px;
+/* Navbar link active state */
+.nav-link.active,
+.nav-link:hover {
+  color: var(--pink-light) !important;
 }
