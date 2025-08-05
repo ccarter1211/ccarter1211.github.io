@@ -14,10 +14,6 @@ body {
 }
 
 
-.navbar {
-  background-color: lightblue !important;
-}
-
 .nav-link {
   color: black !important;
 }
@@ -133,6 +129,11 @@ p {
   background-color: var(--pink-dark);
   color: white;
 }
+.section-contact a {
+  color: white;
+  text-decoration: underline; /* optional */
+}
+
 
 .section-reading {
   background-color: var(--pink-dark);
