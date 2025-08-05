@@ -81,7 +81,7 @@ body {
 }
 
 .section-about {
-  background-color: var(--pink-dark);;
+  background-color: var(--pink-dark);
   color: white;
   text-align: center;
 }
@@ -188,4 +188,11 @@ p {
   text-align: center;
   max-width: 300px;
   word-wrap: break-word;
+}
+
+.spotify-playlist {
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
