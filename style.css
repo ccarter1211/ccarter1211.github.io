@@ -157,3 +157,10 @@ p {
 .resume-button:hover {
   background-color: #ff85c1;
 }
+.gallery img {
+  width: 100%;      /* Make the image fill the width of its container */
+  height: auto;     /* Adjust height automatically to keep aspect ratio */
+  display: block;   /* Remove any inline spacing below images */
+  border-radius: 8px;  /* Optional: rounded corners */
+  object-fit: cover;   /* Optional: crop/scale image to fill container nicely */
+}
