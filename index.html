@@ -3,50 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <title>Camryn Carter - Personal Portfolio</title>
+
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Smooth scroll offset so anchors don't get hidden under fixed navbars */
-    section {
-      scroll-margin-top: 80px; /* adjust based on your navbar height */
-    }
+    section { scroll-margin-top: 80px; }
   </style>
 </head>
 <body>
-  <!-- Top Navigation Bar (commented out) -->
-  <!--
-  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="index.html">Camryn Carter</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold" href="resume.html">Resume</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  -->
 
-  <!-- Left Side Ribbon Sidebar -->
+  <!-- Sidebar / Top Nav -->
   <aside class="sidebar d-flex flex-column align-items-center text-center">
-    <div class="sidebar-photo my-4">
+    <div class="sidebar-photo my-2">
       <img src="IMG_0757.JPG" alt="Camryn Carter" class="rounded-circle img-fluid" />
     </div>
     <nav class="nav flex-column sidebar-nav">
@@ -60,66 +31,56 @@
       <a class="nav-link" href="#music">Music</a>
       <a class="nav-link" href="#contact">Contact</a>
     </nav>
-  </aside> 
+  </aside>
 
-  <!-- Main content shifted right -->
+  <!-- Main content -->
   <main class="main-content">
-    <!-- About Me Section -->
+
+    <!-- About Me -->
     <section id="about" class="section section-about d-flex align-items-center justify-content-center">
       <div class="container text-center text-white">
         <h1 class="mb-3">Hi, I'm Camryn Carter</h1>
-        <p class="lead">
-          Welcome to my website!
-        </p>
+        <p class="lead">Welcome to my website!</p>
       </div>
     </section>
 
-    <!-- Resume Section -->
+    <!-- Resume -->
     <section id="resume" class="section section-resume">
       <div class="container">
         <section id="professional-summary">
           <h1>Professional Summary</h1>
-          <p>
-            Detail-oriented program and project manager with experience orchestrating cross-functional initiatives across various industries. Skilled in strategy, operations, and engineering with a passion for efficient problem-solving.
-          </p>
+          <p>Detail-oriented program and project manager with experience orchestrating cross-functional initiatives across various industries. Skilled in strategy, operations, and engineering with a passion for efficient problem-solving.</p>
         </section>
-<section id="resume">
-  <h2>Resume</h2>
-  <a href="Copy of RESUME_CamrynCarter2025-2026.docx.pdf" target="_blank" class="resume-button">View My Resume (PDF)</a>
-</section>  
+        <section id="resume-link">
+          <h2>Resume</h2>
+          <a href="Copy of RESUME_CamrynCarter2025-2026.docx.pdf" target="_blank" class="resume-button">View My Resume (PDF)</a>
+        </section>
         <section id="work-experience">
           <h2>Work Experience</h2>
           <div class="timeline">
             <div class="timeline-item">
               <p><strong>Project & Program Management, Office of Regulatory Relations — Goldman Sachs</strong></p>
               <p>Feb 2025 – Present </p>
-              <!--<p></p>-->
             </div>
             <div class="timeline-item">
               <p><strong>Strategy Consultant, Operations Transformation — Strategy& (PwC)</strong></p>
               <p>Oct 2023 – Feb 2025</p>
-              <!--<p></p>-->
             </div>
             <div class="timeline-item">
               <p><strong>Strategy Consultant Intern, Operations Transformation — Strategy& (PwC)</strong></p>
               <p>June 2022 – August 2022</p>
-              <!--<p></p>-->
             </div>
             <div class="timeline-item">
               <p><strong>Quality Operations Intern — Merck&Co.</strong></p>
               <p>May 2021 – August 2021</p>
-              <!--<p></p>-->
             </div>
-            <!-- Add more items as needed -->
           </div>
         </section>
-
         <section id="education">
           <h2>Education</h2>
           <p><strong>University of Pennsylvania</strong> — B.S. Systems Engineering, 2023</p>
           <p><strong>Unionville High School</strong> — 2019</p>
         </section>
-
         <section id="skills">
           <h2>Skills</h2>
           <ul>
@@ -134,7 +95,7 @@
       </div>
     </section>
 
-    <!-- Interests Section -->
+    <!-- Interests -->
     <section id="interests" class="section section-interests bg-white text-pink">
       <div class="container">
         <h2 class="mb-4">Skills / Interests</h2>
@@ -142,7 +103,7 @@
       </div>
     </section>
 
-    <!-- Volunteering Section -->
+    <!-- Volunteering -->
     <section id="volunteering" class="section section-volunteering bg-white text-pink">
       <div class="container">
         <h2 class="mb-5">Volunteering</h2>
@@ -150,248 +111,174 @@
       </div>
     </section>
 
-    <!-- Travel Section -->
+    <!-- Travel -->
     <section id="travel" class="section section-travel bg-white text-pink">
       <div class="container">
         <h2>Travel: Places I've Visited</h2>
         <p>Goal: Visit a new country or two cities each year.</p>
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1FHYNQqzr_GeDF_8B_A3bycrP64wtGGc&ehbc=2E312F&noprof=1"
-          width="100%"
-          height="500"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <p style="color: black;">Bucket List / Next Travel (hopefully): </p>
-          <p style="color: black;">1. Sydney, Australia</p>
-          <p style="color: black;">2. Shanghai, China</p>
-          <p style="color: black;">3. Machu Pichu, Peru</p>
-          <p style="color: black;">4. Barcelona, Spain</p>
-          <p style="color: black;">5. Seattle, Washington</p>
-          <p style="color: black;">6. Yosemite, California</p>
+        <div class="embed-container">
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1FHYNQqzr_GeDF_8B_A3bycrP64wtGGc&ehbc=2E312F&noprof=1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        </section>
+        <p style="color: black;">Bucket List / Next Travel (hopefully): </p>
+        <p style="color: black;">1. Sydney, Australia</p>
+        <p style="color: black;">2. Shanghai, China</p>
+        <p style="color: black;">3. Machu Pichu, Peru</p>
+        <p style="color: black;">4. Barcelona, Spain</p>
+        <p style="color: black;">5. Seattle, Washington</p>
+        <p style="color: black;">6. Yosemite, California</p>
+      </div>
+    </section>
 
-
-            
-</section>
-
-    <!-- Photography Section -->
+    <!-- Photography -->
     <section id="photography" class="section section-photography bg-white text-pink">
-  <div class="container">
-    <h2 class="mb-6">Photography</h2>
+      <div class="container">
+        <h2 class="mb-6">Photography</h2>
         <p style="color: black;">Some of my favorite images from recent travel destinations.</p>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img src="IMG_0467.jpg" alt="Grindelwald, Switzerland (July 2025)" />
+            <figcaption>Grindelwald, Switzerland (July 2025)</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="IMG_0603.jpg" alt="Interlaken, Switzerland (July 2025)" />
+            <figcaption>Interlaken, Switzerland (July 2025)</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="IMG_1402.jpg" alt="Eiffel Tower, Paris (May 2023)" />
+            <figcaption>Eiffel Tower, Paris (May 2023)</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="IMG_5947.jpg" alt="Big Ben, London (July 2024)" />
+            <figcaption>Big Ben, London (July 2024)</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="IMG_1611.jpg" alt="Nice, France (May 2023)" />
+            <figcaption>Nice, France (May 2023)</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="IMG_6880.jpg" alt="Brooklyn" />
+            <figcaption>Brooklyn Bridge, New York (September 2024)</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="IMG_7149.jpg" alt="Antelope Canyon, Arizona (July 2024)" />
+            <figcaption>Antelope Canyon, Arizona (July 2024)</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="IMG_8116.jpg" alt="Taipei 101, Taiwan (January 2025)" />
+            <figcaption>Taipei 101, Taiwan (January 2025)</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="IMG_7740.jpg" alt="Tokyo, Japan (December 2024)" />
+            <figcaption>Tokyo, Japan (December 2024)</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="IMG_0654.jpg" alt="Wiesbaden, Germany (July 2025)" />
+            <figcaption>Wiesbaden, Germany (July 2025)</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-    <div class="gallery">
-      <figure class="gallery-item">
-        <img src="IMG_0467.jpg" alt="Grindelwald, Switzerland (July 2025)" />
-        <figcaption>Grindelwald, Switzerland (July 2025)</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img src="IMG_0603.jpg" alt="Interlaken, Switzerland (July 2025)" />
-        <figcaption>Interlaken, Switzerland (July 2025)</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img src="IMG_1402.jpg" alt="Eiffel Tower, Paris (May 2023)" />
-        <figcaption>Eiffel Tower, Paris (May 2023)</figcaption>
-      </figure>
-      <!-- Add more photos here -->
-       <figure class="gallery-item">
-        <img src="IMG_5947.jpg" alt="London (July 2024)" />
-        <figcaption>Big Ben, London (July 2024)</figcaption>
-      </figure>
-       <!-- Add more photos here -->
-       <figure class="gallery-item">
-        <img src="IMG_1611.jpg" alt="Nice (May 2023)" />
-        <figcaption> Nice, France (May 2023)</figcaption>
-      </figure>
-       <!-- Add more photos here -->
-       <figure class="gallery-item">
-        <img src="IMG_6880.jpg" alt="Brooklyn" />
-        <figcaption>Brookyln Bridge, New York (September 2024)</figcaption>
-      </figure>
-      <!-- Add more photos here -->
-       <figure class="gallery-item">
-        <img src="IMG_7149.jpg" alt="Arizona" />
-        <figcaption> Antelope Canyon, Arizona (July 2024)</figcaption>
-      </figure>
-      <!-- Add more photos here -->
-       <figure class="gallery-item">
-        <img src="IMG_8116.jpg" alt="Taipei" />
-        <figcaption>Taipei 101, Taiwan (January 2025)</figcaption>
-      </figure>
-
-      <figure class="gallery-item">
-        <img src="IMG_7740.jpg" alt="Japan" />
-        <figcaption>Tokyo, Japan (December 2024)</figcaption>
-      </figure>
-
-      <figure class="gallery-item">
-        <img src="IMG_0654.jpg" alt="Germany" />
-        <figcaption>Wiesbaden, Germany (July 2025)</figcaption>
-      </figure>
-       
-    </div>
-
-  </div>
-</section>
-
-    <!-- Reading Section -->
+    <!-- Reading -->
     <section id="reading" class="section section-reading bg-white text-pink">
-  <div class="container">
-    <h2 class="mb-6">Reading</h2>
-    <p style="color: black;"> Books I've Read in 2025:</p>
-    <ul class="book-list">
-      <li>
-        <strong>The Ninth House</strong> by Leigh Bardugo
-        <span class="status">– Currently Reading</span>
-      </li>
-      <li>
-        <strong>The Phantom</strong> by Lyndsey Reeve 
-        <span class="status">– Currently Reading</span>
-      </li>
-      <li>
-        <strong>Working Backwards: Insights, Stories, and Secrets from Inside Amazon</strong> by Colin Bryar and Bill Carr
-        <span class="status">– Currently Reading</span>
-      </li>
-      <li>
-        <strong>Just for the Summer</strong> by Abby Jimenez
-        <span class="status">– Finished</span>
-      </li>
-      <li>
-        <strong>Hillbilly Elegy</strong> by JD Vance
-        <span class="status">– Finished</span>
-      </li>
-      <li>
-        <strong>The Housemaid's Secret</strong> by Freida McFadden
-        <span class="status">– Finished</span>
-      </li>
-      <li>
-        <strong>The Housemaid is Watching</strong> by Freida McFadden
-        <span class="status">– Finished</span>
-      </li>
-      <li>
-        <strong>Everything Must Go</strong> by Camille Pagan
-        <span class="status">– Finished</span>
-      </li>
-       <li>
-        <strong>Slowing Down to the Speed of Joy</strong> by Matthew Kelly
-        <span class="status">– Finished</span>
-      </li>
-      <li>
-        <strong>No Reservations</strong> by Shelby Lister
-        <span class="status">– Finished</span>
-      </li>
-      <li>
-        <strong>Acceptance</strong> by Emi Nietfield
-        <span class="status">– Finished</span>
-      </li>
-      <li>
-        <strong>Another Life</strong> by Kristin Hannah
-        <span class="status">– Finished</span>
-      </li>
-      <li>
-        <strong>The Paper Palace</strong> by Miranda Cowley Heller
-        <span class="status">– Finished</span>
-      </li>
-      <li>
-        <strong>What Happened to Nina?</strong> by Dervla Mctiernan
-        <span class="status">– Finished</span>
-      </li>
-      <li>
-        <strong>Say You'll Remember Me</strong> by Abby Jimenez
-        <span class="status">– Finished</span>
-      </li>
-    </ul>
-  </div>
-</section>
+      <div class="container">
+        <h2 class="mb-6">Reading</h2>
+        <p style="color: black;">Books I've Read in 2025:</p>
+        <ul class="book-list">
+          <li><strong>The Ninth House</strong> <span class="status">– Currently Reading</span></li>
+          <li><strong>The Phantom</strong> <span class="status">– Currently Reading</span></li>
+          <li><strong>Working Backwards</strong> <span class="status">– Currently Reading</span></li>
+          <li><strong>Just for the Summer</strong> <span class="status">– Finished</span></li>
+          <li><strong>Hillbilly Elegy</strong> <span class="status">– Finished</span></li>
+          <li><strong>The Housemaid's Secret</strong> <span class="status">– Finished</span></li>
+          <li><strong>The Housemaid is Watching</strong> <span class="status">– Finished</span></li>
+          <li><strong>Everything Must Go</strong> <span class="status">– Finished</span></li>
+          <li><strong>Slowing Down to the Speed of Joy</strong> <span class="status">– Finished</span></li>
+          <li><strong>No Reservations</strong> <span class="status">– Finished</span></li>
+          <li><strong>Acceptance</strong> <span class="status">– Finished</span></li>
+          <li><strong>Another Life</strong> <span class="status">– Finished</span></li>
+          <li><strong>The Paper Palace</strong> <span class="status">– Finished</span></li>
+          <li><strong>What Happened to Nina?</strong> <span class="status">– Finished</span></li>
+          <li><strong>Say You'll Remember Me</strong> <span class="status">– Finished</span></li>
+        </ul>
+      </div>
+    </section>
 
-    <!-- Music Section -->
+    <!-- Music -->
     <section id="music" class="section section-music bg-white text-pink">
-  <div class="container">
-    <h2 class="mb-6">Music</h2>
-    <p style="color: black; font-size: 18px;">Spotify Playlists I Have Created: </p>
+      <div class="container">
+        <h2 class="mb-6">Music</h2>
+        <p style="color: black; font-size: 18px;">Spotify Playlists I Have Created:</p>
 
-    <div class="spotify-playlist">
-       <p style="color: black;">summertime high: indie pop summer anthems</p>
-      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7nGjds4tytkuo9xrwmZxM8?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
+        <div class="spotify-playlist embed-container">
+          <iframe src="https://open.spotify.com/embed/playlist/7nGjds4tytkuo9xrwmZxM8" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="spotify-playlist embed-container">
+          <iframe src="https://open.spotify.com/embed/playlist/5mk8mTEOjvYYcxhjw4tIlO" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="spotify-playlist embed-container">
+          <iframe src="https://open.spotify.com/embed/playlist/6wqLBLg21eIA8FIHU8K9Ju" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="spotify-playlist embed-container">
+          <iframe src="https://open.spotify.com/embed/playlist/7yYfRKuJhO3GXG11fZVuHw" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="spotify-playlist embed-container">
+          <iframe src="https://open.spotify.com/embed/playlist/18w57q0fc6EeFEe0kbkApj" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="spotify-playlist embed-container">
+          <iframe src="https://open.spotify.com/embed/playlist/6qlVe14ykJmrlxsr3K0JKl" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+        </div>
 
-<div class="spotify-playlist">
-       <p style="color: black;">heartpain: for sad song enthusiasts</p>
-      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5mk8mTEOjvYYcxhjw4tIlO?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
+      </div>
+    </section>
 
-<div class="spotify-playlist">
-       <p style="color: black;">cam's past swim songs: swim meet pump-up songs from my past life</p>
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6wqLBLg21eIA8FIHU8K9Ju?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <h1>Contact Me</h1>
+        <p>If you’d like to get in touch, feel free to reach out via any of the following:</p>
+        <ul>
+          <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/camryn-carter/" target="_blank" rel="noopener">linkedin.com/in/camryn-carter</a></li>
+          <li><strong>Instagram:</strong> <a href="https://instagram.com/cams_camera11" target="_blank" rel="noopener">@cams_camera11</a></li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="spotify-playlist">
-       <p style="color: black;">autumn is here: when the days start to smell like falling leaves</p>
-    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7yYfRKuJhO3GXG11fZVuHw?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-
-    <div class="spotify-playlist">
-       <p style="color: black;">too many nights: late nights in NYC</p>
-         <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/18w57q0fc6EeFEe0kbkApj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-    <div class="spotify-playlist">
-       <p style="color: black;">lover: a blend of my favorite love songs</p>
-      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6qlVe14ykJmrlxsr3K0JKl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-    </div>
-  </section>
-
-    <!-- Contact Section -->
-<section id="contact" class="section section-contact">
-  <div class="container">
-    <h1>Contact Me</h1>
-    <p>If you’d like to get in touch, feel free to reach out via any of the following:</p>
-    <ul>
-      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/camryn-carter/" target="_blank" rel="noopener">linkedin.com/in/camryn-carter</a></li>
-      <li><strong>Instagram:</strong> <a href="https://instagram.com/cams_camera11" target="_blank" rel="noopener">@cams_camera11</a></li>
-    </ul>
-  </div>
-</section>
-      
   </main>
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Navigation bar highlight -->
+  <!-- Navigation highlight -->
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-link");
-
-    window.addEventListener("scroll", () => {
-      let current = "";
-
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 100;
-        const sectionHeight = section.offsetHeight;
-        if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
-          current = section.getAttribute("id");
-        }
-      });
-
-      navLinks.forEach((link) => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === `#${current}`) {
-          link.classList.add("active");
-        }
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-link");
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 100;
+          const sectionHeight = section.offsetHeight;
+          if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+            current = section.getAttribute("id");
+          }
+        });
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
       });
     });
-  });
-</script>
+  </script>
 
-  <!-- copyright-->
+  <!-- Footer -->
   <footer class="footer bg-light text-center py-3 mt-4">
-  <div class="container">
-    <small>© 2025 Camryn Carter. All rights reserved.</small>
-  </div>
-</footer>
+    <div class="container">
+      <small>© 2025 Camryn Carter. All rights reserved.</small>
+    </div>
+  </footer>
+
 </body>
 </html>
