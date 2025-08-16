@@ -1,22 +1,86 @@
-/* ------------------- */
-/* Pink Theme Colors    */
-/* ------------------- */
+/* Pink theme colors */
 :root {
   --pink-color: #e83e8c;
   --pink-dark: #b32969;
   --pink-light: #f7bbd1;
 }
 
-/* ------------------- */
-/* Base Styles         */
-/* ------------------- */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
   background: #fff;
   color: #333;
-  font-size: 16px; /* desktop default */
+  font-size: 16px; /* default desktop font */
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.nav-link:hover {
+  color: var(--pink-dark) !important;
+}
+
+/* Sidebar styles (desktop default) */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: var(--pink-dark);
+  color: white;
+  padding-top: 30px;
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-photo img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 4px solid var(--pink-light);
+}
+
+.sidebar-nav {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.sidebar-nav .nav-link {
+  color: var(--pink-light);
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-nav .nav-link:hover,
+.sidebar-nav .nav-link.active {
+  background-color: var(--pink-light);
+  color: var(--pink-dark);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 220px;
+}
+
+/* Section styling */
+.section {
+  padding: 80px 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-about {
+  background-color: var(--pink-dark);
+  color: white;
+  text-align: center;
 }
 
 h1, h2 {
@@ -32,97 +96,7 @@ h3 {
 }
 
 p {
-  line-height: 1.4;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* ------------------- */
-/* Navigation Links     */
-/* ------------------- */
-.nav-link {
-  color: black !important;
-}
-
-.nav-link:hover {
-  color: var(--pink-dark) !important;
-}
-
-/* ------------------- */
-/* Sidebar Styles       */
-/* ------------------- */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 220px;
-  height: 100vh;
-  background-color: var(--pink-dark);
-  color: white;
-  padding-top: 30px;
-  z-index: 1000;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sidebar-photo img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border: 4px solid var(--pink-light);
-  border-radius: 50%;
-}
-
-.sidebar-nav {
-  margin-top: 40px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sidebar-nav .nav-link {
-  color: var(--pink-light);
-  font-weight: 600;
-  padding: 10px 15px;
-  transition: background-color 0.3s, color 0.3s;
-  width: 100%;
-  text-align: center;
-}
-
-.sidebar-nav .nav-link:hover,
-.sidebar-nav .nav-link.active {
-  background-color: var(--pink-light);
-  color: var(--pink-dark);
-  border-radius: 4px;
-}
-
-/* ------------------- */
-/* Main Content         */
-/* ------------------- */
-.main-content {
-  margin-left: 220px;
-}
-
-/* ------------------- */
-/* Section Styling      */
-/* ------------------- */
-.section {
-  padding: 80px 40px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.section-about {
-  background-color: var(--pink-dark);
-  color: white;
-  text-align: center;
+  line-height: 1.2;
 }
 
 .section-resume ul {
@@ -130,7 +104,6 @@ a {
   margin-left: 20px;
 }
 
-/* Sections with pink background */
 .section-interests,
 .section-photography,
 .section-volunteering,
@@ -143,30 +116,30 @@ a {
 
 .section-contact a {
   color: white;
-  text-decoration: underline;
+  text-decoration: underline; /* optional */
 }
 
-/* ------------------- */
-/* Resume Button        */
-/* ------------------- */
+.footer {
+  flex-shrink: 0;
+  background-color: #f8f9fa;
+}
+
 .resume-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff69b4;
+  background-color: #ff69b4; /* pink theme */
   color: white;
+  text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
   margin-top: 10px;
-  transition: background-color 0.3s;
 }
 
 .resume-button:hover {
   background-color: #ff85c1;
 }
 
-/* ------------------- */
-/* Gallery Styling      */
-/* ------------------- */
+/* Gallery styling */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -187,6 +160,7 @@ a {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: block;
 }
 
 .gallery-item figcaption {
@@ -194,39 +168,18 @@ a {
   font-size: 0.9rem;
   color: var(--pink-dark);
   text-align: center;
+  max-width: 300px;
   word-wrap: break-word;
 }
 
-/* ------------------- */
-/* Spotify / Embed Styling */
-/* ------------------- */
-.spotify-playlist,
-.embed-container {
-  margin: 1rem auto;
+.spotify-playlist {
+  margin-top: 1rem;
   max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-}
-
-.embed-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* ------------------- */
-/* Book List Styling    */
-/* ------------------- */
+/* Book list styling */
 .book-list {
   list-style: none;
   padding: 0;
@@ -240,7 +193,7 @@ a {
   color: black;
   margin-bottom: 1rem;
   background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
 }
 
@@ -261,17 +214,7 @@ a {
 }
 
 /* ------------------- */
-/* Footer               */
-/* ------------------- */
-.footer {
-  flex-shrink: 0;
-  background-color: #f8f9fa;
-  padding: 1rem 0;
-  text-align: center;
-}
-
-/* ------------------- */
-/* Mobile Responsive    */
+/* Mobile Responsive   */
 /* ------------------- */
 @media (max-width: 768px) {
   body {
@@ -283,8 +226,9 @@ a {
     flex-direction: column;
   }
 
-  .main-content {
-    margin-left: 0;
+  .container {
+    width: 100%;
+    margin: 0 auto;
   }
 
   /* Sidebar becomes top bar */
@@ -292,15 +236,22 @@ a {
     position: relative;
     width: 100%;
     height: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; /* stack photo and nav vertically */
+    align-items: center;
     padding: 10px;
     box-shadow: none;
   }
 
+  /* Show the sidebar photo on mobile */
   .sidebar-photo {
-    display: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .sidebar-photo img {
+    width: 80px;  /* smaller for mobile */
+    height: 80px;
+    border: 3px solid var(--pink-light);
   }
 
   .sidebar-nav {
@@ -316,17 +267,34 @@ a {
     font-size: 14px;
   }
 
-  /* Gallery responsive images */
-  .gallery img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
+  .main-content {
+    margin-left: 0;
   }
 
-  /* Embeds responsive */
-  .embed-container,
-  .spotify-playlist iframe {
-    width: 100%;
+  /* Gallery images responsive */
+  .gallery img {
+    margin-bottom: 1rem;
+    max-width: 100%;
     height: auto;
+  }
+
+  /* Embed containers for maps/Spotify */
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  }
+
+  .embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;   
+    height: 100%;  
+    border: 0;
   }
 }
