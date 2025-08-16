@@ -11,8 +11,8 @@ body {
   scroll-behavior: smooth;
   background: #fff;
   color: #333;
+  font-size: 16px; /* default desktop font */
 }
-
 
 .nav-link {
   color: black !important;
@@ -22,10 +22,7 @@ body {
   color: var(--pink-dark) !important;
 }
 
-
-
-
-/* Sidebar styles */
+/* Sidebar styles (desktop default) */
 .sidebar {
   position: fixed;
   top: 0;
@@ -94,56 +91,39 @@ h2 {
   color: var(--pink-dark);
 }
 
-h3{
-  line-height: 1.2
+h3 {
+  line-height: 1.2;
 }
+
 p {
   line-height: 1.2;
 }
+
 .section-resume ul {
   list-style-type: disc;
   margin-left: 20px;
 }
 
-.section-interests {
-  background-color: var(--pink-dark);
-  color: white;
-}
-
-.section-photography {
-  background-color: var(--pink-dark);
-  color: white;
-}
-
-.section-volunteering {
-  background-color: var(--pink-dark);
-  color: white;
-}
-
-.section-music {
-  background-color: var(--pink-dark);
-  color: white;
-}
-
-.section-contact {
-  background-color: var(--pink-dark);
-  color: white;
-}
-.section-contact a {
-  color: white;
-  text-decoration: underline; /* optional */
-}
-
-
+.section-interests,
+.section-photography,
+.section-volunteering,
+.section-music,
+.section-contact,
 .section-reading {
   background-color: var(--pink-dark);
   color: white;
+}
+
+.section-contact a {
+  color: white;
+  text-decoration: underline; /* optional */
 }
 
 .footer {
   flex-shrink: 0;
   background-color: #f8f9fa;
 }
+
 .resume-button {
   display: inline-block;
   padding: 10px 20px;
@@ -154,12 +134,15 @@ p {
   font-weight: bold;
   margin-top: 10px;
 }
+
 .resume-button:hover {
   background-color: #ff85c1;
 }
+
+/* Gallery styling */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -168,17 +151,16 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Optional max-width to keep images from getting huge */
   max-width: 300px;
-  margin: 0 auto; /* center items */
+  margin: 0 auto;
 }
 
 .gallery-item img {
-  width: 100%;      /* fill the container width */
-  height: auto;     /* keep aspect ratio */
+  width: 100%;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  display: block;   /* remove inline gap */
+  display: block;
 }
 
 .gallery-item figcaption {
@@ -197,6 +179,7 @@ p {
   margin-right: auto;
 }
 
+/* Book list styling */
 .book-list {
   list-style: none;
   padding: 0;
@@ -230,19 +213,16 @@ p {
   margin-top: 0.2rem;
 }
 
-/* Default styles for desktop */
-body {
-  font-size: 16px;
-}
-
-/* Mobile styles */
+/* ------------------- */
+/* Mobile Responsive   */
+/* ------------------- */
 @media (max-width: 768px) {
   body {
     font-size: 14px;
   }
 
-  .nav, .section {
-    padding: 10px;
+  .section {
+    padding: 20px;
     flex-direction: column;
   }
 
@@ -250,5 +230,36 @@ body {
     width: 100%;
     margin: 0 auto;
   }
-}
 
+  /* Sidebar turns into top bar */
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .sidebar-photo {
+    display: none; /* hide photo on mobile */
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .sidebar-nav .nav-link {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+}
