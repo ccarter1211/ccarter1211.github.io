@@ -31,9 +31,21 @@ body {
   height: 100vh;
   background-color: var(--pink-dark);
   color: white;
-  padding-top: 30px;
+  padding-top: 20px;
   z-index: 1000;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  align-items: center;
+  text-align: center;
+  overflow-y: auto;
+}
+
+/* Sidebar top row (photo + optional hamburger) */
+.sidebar-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
 }
 
 .sidebar-photo img {
@@ -288,11 +300,15 @@ p {
     align-items: stretch;
     padding: 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    overflow: visible;
   }
 
   .sidebar-top {
     justify-content: space-between;
     padding: 8px 16px;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .sidebar-photo {
@@ -375,7 +391,6 @@ p {
   .sidebar-top {
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
+    padding-top: 0;
   }
 }
