@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Camryn Carter - Personal Portfolio</title>
 
+  <!-- Roboto font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Custom CSS -->
@@ -59,274 +63,418 @@
 
     <!-- About Me -->
     <section id="about" class="section section-about d-flex align-items-center justify-content-center">
-      <div class="container text-center text-white">
+      <div class="container text-center">
+        <img src="IMG_0757.JPG" alt="Camryn Carter" class="about-photo rounded-circle mb-4" />
         <h1 class="mb-3">Hi, I'm Camryn Carter</h1>
-        <p class="lead">Welcome to my website!</p>
+        <p class="lead mb-4">Technical Product &amp; Program Manager with a background in Systems Engineering and Strategy Consulting. Navigating life in New York City </p>
+        <div class="about-chips">
+          <span class="chip"><i class="bi bi-geo-alt"></i> new york city</span>
+          <span class="chip"><i class="bi bi-mortarboard"></i> penn '23</span>
+       
+        </div>
+        <div class="about-links mt-4">
+          <a href="https://linkedin.com/in/camryn-carter/" target="_blank" rel="noopener" class="about-link-btn"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          <a href="https://instagram.com/cams_camera11" target="_blank" rel="noopener" class="about-link-btn"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
       </div>
     </section>
 
     <!-- Resume -->
-    <section id="resume" class="section section-resume">
+    <section id="resume" class="section section-resume section-alt">
       <div class="container">
-        <section id="professional-summary">
-          <h1>Professional Summary</h1>
-          <p>Detail-oriented product and program manager with experience orchestrating cross-functional initiatives across various industries. Skilled in strategy, operations, and engineering with a passion for efficient problem-solving. Interested in product, design, & AI.</p>
-        <!--</section>
-        <section id="resume-link">
-          <h2>Resume</h2>
-           <a href="Copy of RESUME_CamrynCarter2025-2026.docx.pdf" target="_blank" class="resume-button">View My Resume (PDF)</a>
-           </section>-->
-        
-        <section id="work-experience">
-          <h2>Work Experience</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <p><strong>Product & Program Management, Engineering — Goldman Sachs</strong></p>
-              <p>Feb 2025 – Present </p>
-            </div>
-            <div class="timeline-item">
-              <p><strong>Strategy Consultant, Operations Transformation — Strategy& (PwC)</strong></p>
-              <p>Oct 2023 – Feb 2025</p>
-            </div>
-            <div class="timeline-item">
-              <p><strong>Strategy Consultant Intern, Operations Transformation — Strategy& (PwC)</strong></p>
-              <p>June 2022 – August 2022</p>
-            </div>
-            <div class="timeline-item">
-              <p><strong>Quality Operations Intern — Merck&Co.</strong></p>
-              <p>May 2021 – August 2021</p>
-            </div>
+
+        <h2 class="mb-1">Professional Summary</h2>
+        <p class="mb-4">Detail-oriented product and program manager with experience orchestrating cross-functional initiatives across various industries. Skilled in strategy, operations, and engineering with a passion for efficient problem-solving. Interested in product, design, &amp; AI.</p>
+
+        <h2 class="mb-3"><i class="bi bi-briefcase me-2"></i>Work Experience</h2>
+        <div class="resume-timeline mb-4">
+          <div class="resume-item">
+            <div class="resume-role">Product &amp; Program Management, Engineering</div>
+            <div class="resume-company">Goldman Sachs</div>
+            <div class="resume-date">Feb 2025 – Present</div>
           </div>
-        </section>
-        <section id="education">
-          <h2>Education</h2>
-          <p><strong>University of Pennsylvania</strong> — B.S. Systems Engineering, 2023</p>
-          <p><strong>Unionville High School</strong> — 2019</p>
-        </section>
-        <section id="skills">
-          <h2>Skills</h2>
-          <ul>
-            <li>Project & Program Management</li>
-            <li>Strategic Planning</li>
-            <li>Cross-functional Team Leadership</li>
-            <li>Operation Strategy</li>
-            <li>Process Improvement</li>
-            <li>Data Analysis</li>
-             </section>
-      <section id="skills">
-        <h2>Volunteering</h2>
-          <ul>
-            <li>SEO Mentoring -- offering ongoing mentorship to NYC high school students to help them navigate the college admissions process and professional development</li>
-            <li>Network for Teaching Entrepreneurship (NFTE) -- involved in business plan competition judging for entrepreneurial education amongst competing high school students</li>
-          </ul>
-      </section>
-          
-       
+          <div class="resume-item">
+            <div class="resume-role">Strategy Consultant, Operations Transformation</div>
+            <div class="resume-company">Strategy&amp; (PwC)</div>
+            <div class="resume-date">Oct 2023 – Feb 2025</div>
+          </div>
+          <div class="resume-item">
+            <div class="resume-role">Strategy Consultant Intern, Operations Transformation</div>
+            <div class="resume-company">Strategy&amp; (PwC)</div>
+            <div class="resume-date">June 2022 – August 2022</div>
+          </div>
+          <div class="resume-item">
+            <div class="resume-role">Quality Operations Intern</div>
+            <div class="resume-company">Merck &amp; Co.</div>
+            <div class="resume-date">May 2021 – August 2021</div>
+          </div>
+        </div>
+
+        <h2 class="mb-3"><i class="bi bi-mortarboard me-2"></i>Education</h2>
+        <div class="resume-timeline mb-4">
+          <div class="resume-item">
+            <div class="resume-role">B.S. Systems Engineering</div>
+            <div class="resume-company">University of Pennsylvania</div>
+            <div class="resume-date">Class of 2023</div>
+          </div>
+          <div class="resume-item">
+            <div class="resume-role">High School Diploma</div>
+            <div class="resume-company">Unionville High School</div>
+            <div class="resume-date">Class of 2019</div>
+          </div>
+        </div>
+
+        <h2 class="mb-3"><i class="bi bi-tools me-2"></i>Skills</h2>
+        <div class="skills-chips mb-4">
+          <span class="skill-chip">Project &amp; Program Management</span>
+          <span class="skill-chip">Strategic Planning</span>
+          <span class="skill-chip">Cross-functional Leadership</span>
+          <span class="skill-chip">Operations Strategy</span>
+          <span class="skill-chip">Process Improvement</span>
+          <span class="skill-chip">Data Analysis</span>
+        </div>
+
+        <h2 class="mb-3"><i class="bi bi-people me-2"></i>Volunteering</h2>
+        <div class="resume-timeline">
+          <div class="resume-item">
+            <div class="resume-role">Mentor — SEO</div>
+            <div class="resume-company">Ongoing mentorship for NYC high school students navigating college admissions and early career development.</div>
+          </div>
+          <div class="resume-item">
+            <div class="resume-role">Judge — Network for Teaching Entrepreneurship (NFTE)</div>
+            <div class="resume-company">Business plan competition judge supporting entrepreneurial education among high school students.</div>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- Interests -->
-    <section id="interests" class="section section-interests bg-white text-pink">
+    <section id="interests" class="section section-interests">
       <div class="container">
-        <h2 class="mb-4">Interests</h2>
-        <p style="color: black;">Just a few things I enjoy: </p>
-        <ul>
-          <li style= "color: black;">Pilates & hot yoga</li>
-          <li style= "color: black;">A good book & matcha</li>
-          <li style= "color: black;">Exploring new cities</li>
-          <li style= "color: black;">Karaoke night with friends</li>
-          <li style= "color: black;">Long walks with an upbeat playlist</li>
-          <li style= "color: black;">Scuba diving (when I can)</li>
-          <li style= "color: black;">Capturing photos of pretty things</li>
-        </ul>
+        <h2 class="mb-2">Interests</h2>
+        <p class="mb-4">Just a few things I enjoy:</p>
+        <div class="interests-grid">
+          <div class="interest-card">
+            <i class="bi bi-heart-pulse"></i>
+            <span>Pilates &amp; hot yoga</span>
+          </div>
+          <div class="interest-card">
+            <i class="bi bi-book"></i>
+            <span>A good book &amp; matcha</span>
+          </div>
+          <div class="interest-card">
+            <i class="bi bi-compass"></i>
+            <span>Exploring new cities</span>
+          </div>
+          <div class="interest-card">
+            <i class="bi bi-mic"></i>
+            <span>Karaoke with friends</span>
+          </div>
+          <div class="interest-card">
+            <i class="bi bi-headphones"></i>
+            <span>Long walks &amp; good music</span>
+          </div>
+          <div class="interest-card">
+            <i class="bi bi-water"></i>
+            <span>Scuba diving</span>
+          </div>
+          <div class="interest-card">
+            <i class="bi bi-camera"></i>
+            <span>Photography</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Travel -->
-    <section id="travel" class="section section-travel bg-white text-pink">
+    <section id="travel" class="section section-travel section-alt">
       <div class="container">
         <h2>Travel: Places I've Visited</h2>
         <p>Goal: Visit a new country or two cities each year. Upcoming Countries: Canada, Hungary, Austria, & Croatia</p>
         <div class="embed-container">
           <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1FHYNQqzr_GeDF_8B_A3bycrP64wtGGc&ehbc=2E312F&noprof=1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <p style="color: black;">Bucket List / Next Travel (hopefully): </p>
-        <p style="color: black;">1. Sydney, Australia</p>
-        <p style="color: black;">2. Shanghai, China</p>
-        <p style="color: black;">3. Machu Picchu, Peru</p>
-        <p style="color: black;">4. Seattle, Washington</p>
-        <p style="color: black;">5. Yosemite, California</p>
+        <div class="travel-lists">
+          <div>
+            <h3 class="bucket-list-title"><i class="bi bi-star"></i> Bucket List</h3>
+            <div class="bucket-list">
+              <div class="bucket-item">
+                <span class="bucket-num">01</span>
+                <div class="bucket-info">
+                  <span class="bucket-place">Sydney</span>
+                  <span class="bucket-country">Australia</span>
+                </div>
+              </div>
+              <div class="bucket-item">
+                <span class="bucket-num">02</span>
+                <div class="bucket-info">
+                  <span class="bucket-place">Shanghai</span>
+                  <span class="bucket-country">China</span>
+                </div>
+              </div>
+              <div class="bucket-item">
+                <span class="bucket-num">03</span>
+                <div class="bucket-info">
+                  <span class="bucket-place">Machu Picchu</span>
+                  <span class="bucket-country">Peru</span>
+                </div>
+              </div>
+              <div class="bucket-item">
+                <span class="bucket-num">04</span>
+                <div class="bucket-info">
+                  <span class="bucket-place">Seattle</span>
+                  <span class="bucket-country">Washington, USA</span>
+                </div>
+              </div>
+              <div class="bucket-item">
+                <span class="bucket-num">05</span>
+                <div class="bucket-info">
+                  <span class="bucket-place">Yosemite</span>
+                  <span class="bucket-country">California, USA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="bucket-list-title"><i class="bi bi-airplane"></i> Upcoming Travels</h3>
+            <div class="bucket-list">
+              <div class="bucket-item">
+                <span class="bucket-num">01</span>
+                <div class="bucket-info">
+                  <span class="bucket-place">Canada</span>
+                </div>
+              </div>
+              <div class="bucket-item">
+                <span class="bucket-num">02</span>
+                <div class="bucket-info">
+                  <span class="bucket-place">Hungary</span>
+                </div>
+              </div>
+              <div class="bucket-item">
+                <span class="bucket-num">03</span>
+                <div class="bucket-info">
+                  <span class="bucket-place">Austria</span>
+                </div>
+              </div>
+              <div class="bucket-item">
+                <span class="bucket-num">04</span>
+                <div class="bucket-info">
+                  <span class="bucket-place">Croatia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Photography -->
-    <section id="photography" class="section section-photography bg-white text-pink">
+    <section id="photography" class="section section-photography">
       <div class="container">
-        <h2 class="mb-6">Photography</h2>
-        <p style="color: black;">Some of my favorite images from recent travel destinations.</p>
+        <h2 class="mb-2">Photography</h2>
+        <p class="mb-4">Some of my favorite images from recent travels.</p>
         <div class="gallery">
           <figure class="gallery-item">
             <img src="IMG_2198.jpg" alt="Sevilla, Spain (November 2025)" />
-            <figcaption>Sevilla, Spain (November 2025)</figcaption>
+            <figcaption>Sevilla, Spain</figcaption>
           </figure>
           <figure class="gallery-item">
             <img src="IMG_1864.jpg" alt="Barcelona, Spain (November 2025)" />
-            <figcaption>Barcelona, Spain (November 2025)</figcaption>
+            <figcaption>Barcelona, Spain</figcaption>
           </figure>
           <figure class="gallery-item">
             <img src="IMG_0467.jpg" alt="Grindelwald, Switzerland (July 2025)" />
-            <figcaption>Grindelwald, Switzerland (July 2025)</figcaption>
+            <figcaption>Grindelwald, Switzerland</figcaption>
           </figure>
           <figure class="gallery-item">
             <img src="IMG_0603.jpg" alt="Interlaken, Switzerland (July 2025)" />
-            <figcaption>Interlaken, Switzerland (July 2025)</figcaption>
+            <figcaption>Interlaken, Switzerland</figcaption>
           </figure>
           <figure class="gallery-item">
             <img src="IMG_1402.jpg" alt="Eiffel Tower, Paris (May 2023)" />
-            <figcaption>Eiffel Tower, Paris (May 2023)</figcaption>
+            <figcaption>Paris, France</figcaption>
           </figure>
           <figure class="gallery-item">
             <img src="IMG_5947.jpg" alt="Big Ben, London (July 2024)" />
-            <figcaption>Big Ben, London (July 2024)</figcaption>
+            <figcaption>London, England</figcaption>
           </figure>
           <figure class="gallery-item">
             <img src="IMG_1611.jpg" alt="Nice, France (May 2023)" />
-            <figcaption>Nice, France (May 2023)</figcaption>
+            <figcaption>Nice, France</figcaption>
           </figure>
           <figure class="gallery-item">
-            <img src="IMG_6880.jpg" alt="Brooklyn" />
-            <figcaption>Brooklyn Bridge, New York (September 2024)</figcaption>
+            <img src="IMG_6880.jpg" alt="Brooklyn Bridge, New York (September 2024)" />
+            <figcaption>Brooklyn, New York</figcaption>
           </figure>
           <figure class="gallery-item">
             <img src="IMG_7149.jpg" alt="Antelope Canyon, Arizona (July 2024)" />
-            <figcaption>Antelope Canyon, Arizona (July 2024)</figcaption>
+            <figcaption>Antelope Canyon, Arizona</figcaption>
           </figure>
           <figure class="gallery-item">
             <img src="IMG_8116.jpg" alt="Taipei 101, Taiwan (January 2025)" />
-            <figcaption>Taipei 101, Taiwan (January 2025)</figcaption>
+            <figcaption>Taipei, Taiwan</figcaption>
           </figure>
           <figure class="gallery-item">
             <img src="IMG_7740.jpg" alt="Tokyo, Japan (December 2024)" />
-            <figcaption>Tokyo, Japan (December 2024)</figcaption>
+            <figcaption>Tokyo, Japan</figcaption>
           </figure>
           <figure class="gallery-item">
             <img src="IMG_0654.jpg" alt="Wiesbaden, Germany (July 2025)" />
-            <figcaption>Wiesbaden, Germany (July 2025)</figcaption>
+            <figcaption>Wiesbaden, Germany</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
     <!-- Reading -->
-    <section id="reading" class="section section-reading bg-white text-pink">
+    <section id="reading" class="section section-reading section-alt">
       <div class="container">
-        <h2 class="mb-6">Reading</h2>
+        <h2>Reading</h2>
+        <p class="mb-4"><i class="bi bi-star-fill" style="color:var(--pink-dark);font-size:0.8rem;"></i><i class="bi bi-star-fill" style="color:var(--pink-dark);font-size:0.8rem;"></i> = Highly Recommend</p>
 
-        <p style="color: black;">Books I've Read in 2026:</p>
-        <ul class="book-list">
-          <li><strong>** Highly Recommend</strong>
-          <li><strong>Total Count: 9</strong>
-          <li><strong>More Than Enough</strong> by Anna Quindlen<span class="status">– Currently Reading</span></li> 
-          <li><strong>Toxic Grit</strong> by Amanda Goetz<span class="status">– Finished</span></li> 
-          <li><strong>French Braid</strong> by Anne Tyler<span class="status">– Finished</span></li>  
-          <li><strong>The Correspondent**</strong> by Virginia Evans<span class="status">– Finished</span></li>
-          <li><strong>The Four Agreements</strong> by Don Miguel Ruiz<span class="status">– Finished</span></li>
-          <li><strong>Theo of Golden**</strong> by Allen Levi <span class="status">– Finished</span></li>
-          <li><strong>The Very Depths Did Rot**</strong> by Lyndsey Reeve <span class="status">– Finished</span></li>
-          <li><strong>The Metamorphosis</strong> by Franz Kafka <span class="status">– Finished</span></li>
-          <li><strong>Hello Beautiful</strong> by Ann Napolitano <span class="status">– Finished</span></li>
-          <li><strong>All the Colors of the Dark</strong> by Chris Whitaker<span class="status">– Finished</span></li>  
-          </ul>
-        <p style="color: black;">Books I've Read in 2025:</p>
-        <ul class="book-list">
-          <li>My book club at work recently read the <i>The Mountain is You</i> by Brianna Wiest and <i>Tomorrow and Tomorrow and Tomorrow</i> by Gabrielle Nevin.</li>
-
-          <li><strong>Total Count: 27</strong>
-
-          <li><strong>The Sisters of Fortune</strong> by Anna Lee Huber <span class="status">– Finished</span></li>
-          <li><strong>Bully Market: My Story of Money and Misogyny at Goldman Sachs**</strong> by Jamie Fiore Higgins <span class="status">– Finished</span></li>
-          <li><strong>Show Don't Tell</strong> by Curtis Sittenfeld <span class="status">– Finished</span></li>
-          <li><strong>Remarkably Bright Creatures</strong> by Shelby Pelt <span class="status">– Finished </span></li>
-          <li><strong>The River is Waiting</strong> by Wally Lamb <span class="status">– Finished</span></li>
-          <li><strong>All That Life Can Afford</strong> by Emily Everett <span class="status">– Finished</span></li>
-          <li><strong>Royally Not Ready</strong> by Megan Quinn <span class="status">– Finished</span></li>
-          <li><strong>How to Win Friends and Influence People</strong> by Dale Carnegie <span class="status">– Finished</span></li>
-          <li><strong>Great Big Beautiful Life</strong> by Emily Henry <span class="status">– Finished</span></li>
-          <li><strong>Inspired</strong> by Marty Cagan <span class="status">– Finished</span></li>
-          <li><strong>The Let Them Theory**</strong> by Mel Robbins <span class="status">– Finished</span></li>
-          <li><strong>Tomorrow and Tomorrow and Tomorrow**</strong> by Gabrielle Nevin <span class="status">– Finished</span></li>
-          <li><strong>Broken Country**</strong> by Claire Leslie Hall  <span class="status">– Finished</span></li>
-          <li><strong>The Mountain is You</strong> by Brianna Wiest <span class="status">– Finished</span></li>
-          <li><strong>Working Backwards: Insights, Stories, and Secrets from Inside Amazon</strong> by Colin Bryar & Bill Carr<span class="status">– Finished</span></li>
-          <li><strong>Just for the Summer</strong> by Abby Jimenez<span class="status">– Finished</span></li>
-          <li><strong>Hillbilly Elegy</strong> by JD Vance <span class="status">– Finished</span></li>
-          <li><strong>The Housemaid's Secret</strong> by Freida McFadden <span class="status">– Finished</span></li>
-          <li><strong>The Housemaid is Watching</strong> by Freida McFadden <span class="status">– Finished</span></li>
-          <li><strong>Everything Must Go</strong> by Camille Pagan <span class="status">– Finished</span></li>
-          <li><strong>Slowing Down to the Speed of Joy</strong> by Matthew Kelly <span class="status">– Finished</span></li>
-          <li><strong>No Reservations</strong> by Shelby Lister <span class="status">– Finished</span></li>
-          <li><strong>Acceptance**</strong> by Emi Nietfield <span class="status">– Finished</span></li>
-          <li><strong>Another Life</strong> by Kristin Hannah <span class="status">– Finished</span></li>
-          <li><strong>The Paper Palace</strong> by Miranda Cowley Heller <span class="status">– Finished</span></li>
-          <li><strong>What Happened to Nina?</strong> by Dervla McTiernan<span class="status">– Finished</span></li>
-          <li><strong>Say You'll Remember Me</strong> by Abby Jimenez <span class="status">– Finished</span></li>
+        <!-- Year tabs -->
+        <ul class="nav reading-tabs mb-4" id="readingTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="reading-tab active" id="tab-2026" data-bs-toggle="tab" data-bs-target="#books-2026" type="button" role="tab">2026 &nbsp;<span class="book-count">9 books</span></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="reading-tab" id="tab-2025" data-bs-toggle="tab" data-bs-target="#books-2025" type="button" role="tab">2025 &nbsp;<span class="book-count">27 books</span></button>
+          </li>
         </ul>
+
+        <div class="tab-content">
+          <!-- 2026 -->
+          <div class="tab-pane fade show active" id="books-2026" role="tabpanel">
+            <ul class="book-list">
+              <li><strong>More Than Enough</strong> by Anna Quindlen<span class="status">Currently Reading</span></li>
+              <li><strong>Toxic Grit</strong> by Amanda Goetz<span class="status">Finished</span></li>
+              <li><strong>French Braid</strong> by Anne Tyler<span class="status">Finished</span></li>
+              <li><strong>The Correspondent ⭑⭑</strong> by Virginia Evans<span class="status">Finished</span></li>
+              <li><strong>The Four Agreements</strong> by Don Miguel Ruiz<span class="status">Finished</span></li>
+              <li><strong>Theo of Golden ⭑⭑</strong> by Allen Levi<span class="status">Finished</span></li>
+              <li><strong>The Very Depths Did Rot ⭑⭑</strong> by Lyndsey Reeve<span class="status">Finished</span></li>
+              <li><strong>The Metamorphosis</strong> by Franz Kafka<span class="status">Finished</span></li>
+              <li><strong>Hello Beautiful</strong> by Ann Napolitano<span class="status">Finished</span></li>
+              <li><strong>All the Colors of the Dark</strong> by Chris Whitaker<span class="status">Finished</span></li>
+            </ul>
+          </div>
+          <!-- 2025 -->
+          <div class="tab-pane fade" id="books-2025" role="tabpanel">
+            <p class="mb-3" style="font-size:0.9rem;color:#666;">Book club reads: <em>The Mountain is You</em> by Brianna Wiest &amp; <em>Tomorrow and Tomorrow and Tomorrow</em> by Gabrielle Nevin.</p>
+            <ul class="book-list">
+              <li><strong>The Sisters of Fortune</strong> by Anna Lee Huber<span class="status">Finished</span></li>
+              <li><strong>Bully Market ⭑⭑</strong> by Jamie Fiore Higgins<span class="status">Finished</span></li>
+              <li><strong>Show Don't Tell</strong> by Curtis Sittenfeld<span class="status">Finished</span></li>
+              <li><strong>Remarkably Bright Creatures</strong> by Shelby Pelt<span class="status">Finished</span></li>
+              <li><strong>The River is Waiting</strong> by Wally Lamb<span class="status">Finished</span></li>
+              <li><strong>All That Life Can Afford</strong> by Emily Everett<span class="status">Finished</span></li>
+              <li><strong>Royally Not Ready</strong> by Megan Quinn<span class="status">Finished</span></li>
+              <li><strong>How to Win Friends and Influence People</strong> by Dale Carnegie<span class="status">Finished</span></li>
+              <li><strong>Great Big Beautiful Life</strong> by Emily Henry<span class="status">Finished</span></li>
+              <li><strong>Inspired</strong> by Marty Cagan<span class="status">Finished</span></li>
+              <li><strong>The Let Them Theory ⭑⭑</strong> by Mel Robbins<span class="status">Finished</span></li>
+              <li><strong>Tomorrow and Tomorrow and Tomorrow ⭑⭑</strong> by Gabrielle Nevin<span class="status">Finished</span></li>
+              <li><strong>Broken Country ⭑⭑</strong> by Claire Leslie Hall<span class="status">Finished</span></li>
+              <li><strong>The Mountain is You</strong> by Brianna Wiest<span class="status">Finished</span></li>
+              <li><strong>Working Backwards</strong> by Colin Bryar &amp; Bill Carr<span class="status">Finished</span></li>
+              <li><strong>Just for the Summer</strong> by Abby Jimenez<span class="status">Finished</span></li>
+              <li><strong>Hillbilly Elegy</strong> by JD Vance<span class="status">Finished</span></li>
+              <li><strong>The Housemaid's Secret</strong> by Freida McFadden<span class="status">Finished</span></li>
+              <li><strong>The Housemaid is Watching</strong> by Freida McFadden<span class="status">Finished</span></li>
+              <li><strong>Everything Must Go</strong> by Camille Pagan<span class="status">Finished</span></li>
+              <li><strong>Slowing Down to the Speed of Joy</strong> by Matthew Kelly<span class="status">Finished</span></li>
+              <li><strong>No Reservations</strong> by Shelby Lister<span class="status">Finished</span></li>
+              <li><strong>Acceptance ⭑⭑</strong> by Emi Nietfield<span class="status">Finished</span></li>
+              <li><strong>Another Life</strong> by Kristin Hannah<span class="status">Finished</span></li>
+              <li><strong>The Paper Palace</strong> by Miranda Cowley Heller<span class="status">Finished</span></li>
+              <li><strong>What Happened to Nina?</strong> by Dervla McTiernan<span class="status">Finished</span></li>
+              <li><strong>Say You'll Remember Me</strong> by Abby Jimenez<span class="status">Finished</span></li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- Music -->
-    <section id="music" class="section section-music bg-white text-pink">
+    <section id="music" class="section section-music">
       <div class="container">
-        <h2 class="mb-6">Music</h2>
-        <p style="color: black; font-size: 18px;">Spotify Playlists I Have Created:</p>
+        <h2>Music</h2>
+        <p class="mb-4">Spotify playlists I've created:</p>
 
-        <div class="spotify-playlist embed-container">
-          <p style="color: black; font-size: 16px;">summertime high: indie pop summer songs</p>
-          <iframe height="352" src="https://open.spotify.com/embed/playlist/7nGjds4tytkuo9xrwmZxM8" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="spotify-playlist embed-container">
-          <p style="color: black; font-size: 16px;">belt it out: my favorite karaoke songs</p>
-          <iframe height="352" src="https://open.spotify.com/embed/playlist/0GfryV01SHtwZLGLG9yemI?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="spotify-playlist embed-container">
-          <p style="color: black; font-size: 16px;">5'9, brown eyes: upbeat afrobeats</p>
-          <iframe height="352" src="https://open.spotify.com/embed/playlist/5mFvPQs7DkLYOzrWiHf9KA?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="spotify-playlist embed-container">
-          <p style="color: black; font-size: 16px;">heartpain: for my fellow sad song enthuasiasts</p>
-          <iframe height="352" src="https://open.spotify.com/embed/playlist/5mk8mTEOjvYYcxhjw4tIlO" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="spotify-playlist embed-container">
-          <p style="color: black; font-size: 16px;">cam's past swim songs: songs from my past life</p>
-          <iframe height="352" src="https://open.spotify.com/embed/playlist/6wqLBLg21eIA8FIHU8K9Ju" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="spotify-playlist embed-container">
-          <p style="color: black; font-size: 16px;">autumn is here: when the leaves change colors</p>
-          <iframe height="352" src="https://open.spotify.com/embed/playlist/7yYfRKuJhO3GXG11fZVuHw" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="spotify-playlist embed-container">
-          <p style="color: black; font-size: 16px;">too many nights: late nights in nyc</p>
-          <iframe height="352" src="https://open.spotify.com/embed/playlist/18w57q0fc6EeFEe0kbkApj" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="spotify-playlist embed-container">
-          <p style="color: black; font-size: 16px;">lover: a collection of my favorite love songs</p>
-          <iframe height="352" src="https://open.spotify.com/embed/playlist/6qlVe14ykJmrlxsr3K0JKl" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+        <div class="music-grid">
+          <div class="spotify-playlist">
+            <p class="playlist-caption"><i class="bi bi-music-note-beamed"></i> summertime high</p>
+            <p class="playlist-desc">indie pop summer songs</p>
+            <iframe src="https://open.spotify.com/embed/playlist/7nGjds4tytkuo9xrwmZxM8" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="spotify-playlist">
+            <p class="playlist-caption"><i class="bi bi-music-note-beamed"></i> belt it out</p>
+            <p class="playlist-desc">my favorite karaoke songs</p>
+            <iframe src="https://open.spotify.com/embed/playlist/0GfryV01SHtwZLGLG9yemI?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="spotify-playlist">
+            <p class="playlist-caption"><i class="bi bi-music-note-beamed"></i> 5'9, brown eyes</p>
+            <p class="playlist-desc">upbeat afrobeats</p>
+            <iframe src="https://open.spotify.com/embed/playlist/5mFvPQs7DkLYOzrWiHf9KA?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="spotify-playlist">
+            <p class="playlist-caption"><i class="bi bi-music-note-beamed"></i> heartpain</p>
+            <p class="playlist-desc">for my fellow sad song enthusiasts</p>
+            <iframe src="https://open.spotify.com/embed/playlist/5mk8mTEOjvYYcxhjw4tIlO" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="spotify-playlist">
+            <p class="playlist-caption"><i class="bi bi-music-note-beamed"></i> cam's past swim songs</p>
+            <p class="playlist-desc">songs from my past life</p>
+            <iframe src="https://open.spotify.com/embed/playlist/6wqLBLg21eIA8FIHU8K9Ju" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="spotify-playlist">
+            <p class="playlist-caption"><i class="bi bi-music-note-beamed"></i> autumn is here</p>
+            <p class="playlist-desc">when the leaves change colors</p>
+            <iframe src="https://open.spotify.com/embed/playlist/7yYfRKuJhO3GXG11fZVuHw" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="spotify-playlist">
+            <p class="playlist-caption"><i class="bi bi-music-note-beamed"></i> too many nights</p>
+            <p class="playlist-desc">late nights in nyc</p>
+            <iframe src="https://open.spotify.com/embed/playlist/18w57q0fc6EeFEe0kbkApj" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="spotify-playlist">
+            <p class="playlist-caption"><i class="bi bi-music-note-beamed"></i> lover</p>
+            <p class="playlist-desc">a collection of my favorite love songs</p>
+            <iframe src="https://open.spotify.com/embed/playlist/6qlVe14ykJmrlxsr3K0JKl" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"></iframe>
+          </div>
         </div>
 
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section section-contact">
-      <div class="container">
-        <h1>Contact Me</h1>
-        <p>If you’d like to get in touch, feel free to reach out via any of the following:</p>
-        <ul>
-          <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/camryn-carter/" target="_blank" rel="noopener">linkedin.com/in/camryn-carter</a></li>
-          <li><strong>Instagram:</strong> <a href="https://instagram.com/cams_camera11" target="_blank" rel="noopener">@cams_camera11</a></li>
-        </ul>
+    <section id="contact" class="section section-contact section-alt">
+      <div class="container text-center">
+        <h2 class="mb-2">Get in Touch</h2>
+        <p class="mb-4" style="color:#555;">Feel free to reach out — I’d love to connect.</p>
+        <div class="contact-links">
+          <a href="https://linkedin.com/in/camryn-carter/" target="_blank" rel="noopener" class="contact-link-card">
+            <i class="bi bi-linkedin"></i>
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-sub">linkedin.com/in/camryn-carter</span>
+          </a>
+          <a href="https://instagram.com/cams_camera11" target="_blank" rel="noopener" class="contact-link-card">
+            <i class="bi bi-instagram"></i>
+            <span class="contact-link-label">Instagram</span>
+            <span class="contact-link-sub">@cams_camera11</span>
+          </a>
+        </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center py-3 mt-4">
+      <div class="container">
+        <small>© 2025 Camryn Carter. All rights reserved.</small>
+      </div>
+    </footer>
 
   </main>
 
@@ -370,12 +518,6 @@
     });
   </script>
 
-  <!-- Footer -->
-  <footer class="footer bg-light text-center py-3 mt-4">
-    <div class="container">
-      <small>© 2025 Camryn Carter. All rights reserved.</small>
-    </div>
-  </footer>
 
 </body>
 </html>
